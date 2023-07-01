@@ -1,9 +1,10 @@
 version: "3.9"
 services:
   app:
+    image: edemreshidov/devops-for-programmers-project-lvl1:latest
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.production
     command: npm test
     volumes:
       - ./app:/app
