@@ -20,7 +20,8 @@ jobs:
         with:
           node-version: 14.18.1
           cache: 'npm'
-        name: Run test
+      -
+        name: Run tests
         run: |
           make ci
       -
