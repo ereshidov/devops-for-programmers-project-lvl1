@@ -7,6 +7,10 @@ on:
 env:
   IMAGE_NAME: edemreshidov/devops-for-programmers-project-lvl1:latest
 
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
